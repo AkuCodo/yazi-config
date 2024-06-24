@@ -57,20 +57,20 @@ play = [
 
 [open]
 rules = [
-	{ name = "*/", use = [ "edit", "open", "reveal" ] },
+    { name = "*/", use = [ "reveal" ] },
 
-	{ mime = "text/*",          use = [ "edit", "reveal" ] },
-	{ mime = "image/*",         use = [ "open", "reveal" ] },
-	{ mime = "{audio,video}/*", use = [ "play", "reveal" ] },
-	{ mime = "inode/x-empty",   use = [ "edit", "reveal" ] },
+    { mime = "text/*",          use = [ "reveal" ] },
+    { mime = "image/*",         use = [ "reveal" ] },
+    { mime = "{audio,video}/*", use = [ "reveal" ] },
+    { mime = "inode/x-empty",   use = [ "reveal" ] },
 
-	{ mime = "application/{,g}zip", use = [ "extract", "reveal" ] },
-	{ mime = "application/x-{tar,bzip*,7z-compressed,xz,rar}", use = [ "extract", "reveal" ] },
+    { mime = "application/{,g}zip", use = [ "reveal" ] },
+    { mime = "application/x-{tar,bzip*,7z-compressed,xz,rar}", use = [ "reveal" ] },
 
-	{ mime = "application/{json,x-ndjson}", use = [ "edit", "reveal" ] },
-	{ mime = "*/javascript", use = [ "edit", "reveal" ] },
+    { mime = "application/{json,x-ndjson}", use = [ "reveal" ] },
+    { mime = "*/javascript", use = [ "reveal" ] },
 
-	{ name = "*", use = [ "open", "reveal" ] },
+    { name = "*", use = [ "reveal" ] },
 ]
 
 [tasks]
